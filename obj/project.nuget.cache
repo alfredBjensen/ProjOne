@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "hrh2PTOgnk5Frn7GT6FqYBBISdWd17AUYBUCfiAQfOvcBpisQbOyfsn09gDxWWyNC0H1LUUMG287OZyiaeEmhw==",
-  "success": false,
+  "dgSpecHash": "NQnqYxbuu0oEo4fEMeymsmWIbPSTC/uTQVnOkDvDMREUNIgH57aJtq4hAbvx4mcu9EeKMPVTc/D94NBVpXE27Q==",
+  "success": true,
   "projectFilePath": "/home/aljensen/Dev/Entity/ProjOne/ProjOne.csproj",
   "expectedPackageFiles": [
     "/home/aljensen/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
@@ -31,9 +31,10 @@
   ],
   "logs": [
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for Microsoft.EntityFrameworkCore.Relational. Install/reference Microsoft.EntityFrameworkCore.Relational 5.0.3 directly to project ProjOne to resolve this issue. \n ProjOne -> Microsoft.EntityFrameworkCore.Design 5.0.3 -> Microsoft.EntityFrameworkCore.Relational (>= 5.0.3) \n ProjOne -> Pomelo.EntityFrameworkCore.MySql 3.2.4 -> Microsoft.EntityFrameworkCore.Relational (>= 3.1.8 && < 5.0.0).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 3.2.4 requires Microsoft.EntityFrameworkCore.Relational (>= 3.1.8 && < 5.0.0) but version Microsoft.EntityFrameworkCore.Relational 5.0.3 was resolved.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net5.0"
